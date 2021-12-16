@@ -65,4 +65,8 @@
     .container {
         grid-template-columns: 1fr;
     }
+    .profile img {
+        width: 250px;
+        height: 250px;
+    }
 }
