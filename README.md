@@ -1,4 +1,2 @@
 # janaksan.github.io
-My Website ..... 
-
-Krishnamoorthy Janaksan
+Personal website of Janaksan Krishnamoorthy.
