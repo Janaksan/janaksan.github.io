@@ -1,7 +1,7 @@
 :root { 
    --whiteColor : #F5F5F5;
    --redColor : #F05454;
-   --navyColor : #30475E;
+   --navyColor : #23263f;
    --blackColor : #121212;
 }
 
@@ -104,6 +104,46 @@ h1 {
 
 .about {
     grid-area: about;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.basic-info {
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding: 4rem;
+}
+
+.basic-info h2 {
+    margin-bottom: 2rem;
+}
+
+.basic-info ul {
+    width: 100%;
+}
+
+.basic-info ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.2rem;
+}
+
+.basic-info ul li h5 {
+    font-size: 1.2rem;
+}
+
+.my-skill {
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding: 4rem;
 }
 
 
@@ -186,5 +226,19 @@ h1 {
 
     .download-btn {
         width: 80%;
+    }
+
+    .about {
+        flex-direction: column;
+    }
+
+    .basic-info {
+        width: 85%;
+        color: white;
+        background: #23263f;
+    }
+
+    .my-skill {
+        width: 85%;
     }
 }
