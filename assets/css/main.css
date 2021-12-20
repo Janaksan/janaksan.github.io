@@ -216,6 +216,11 @@ h1 {
     box-shadow: 4.0px 8.0px 8.0px hsl(0deg 0% 0% / 0.38);
 }
 
+.resume-box:hover{
+    animation: "jello";
+    animation-duration: 2s;
+}
+
 
 .blog {
     grid-area: blog;
