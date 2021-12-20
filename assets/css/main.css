@@ -1,8 +1,7 @@
 :root { 
-   --whiteColor : #F5F5F5;
-   --redColor : #F05454;
-   --navyColor : #23263f;
-   --blackColor : #121212;
+   --white : #FFF;
+   --primary: #30475E;
+   --black : #000000;
 }
 
 * {
@@ -38,9 +37,7 @@
     background-size: cover;
     background-position: center;
     height: 100vh;
-    /* background-color: var(--navyColor) */
-    background: rgb(2,0,36);
-background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(35,45,134,1) 95%);
+    background-image: linear-gradient(to bottom, #30475e, #2d384a, #262a36, #1e1e24, #121212);
 }
 
 .header-1 {
@@ -56,13 +53,13 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(35,45,134,1) 95%);
 
 h1 {
     font-size: 4rem;
-    color: var(--whiteColor);
-    /* color: var(--blackColor); */
+    color: var(--white);
+
 }
 
 .job-role {
     font-size: 1.3rem;
-    color: var(--whiteColor);
+    color: var(--white);
 }
 
 .g-c-span {
@@ -82,10 +79,11 @@ h1 {
 
 
 .about-info {
-    /* grid-area: about-info; */
+    grid-area: about-info;
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 .info-1 {
@@ -107,14 +105,14 @@ h1 {
     border-radius: 2rem;
     border: none;
     width: 90%;
-    color: var(--whiteColor);
-    background-color: var(--navyColor);
+    color: var(--white);
+    background-color: var(--primary);
 }
 
 .download-btn:hover {
     background: none;
-    border: 2px solid var(--navyColor);
-    color: var(--navyColor);
+    border: 2px solid var(--primary);
+    color: var(--primary);
 }
 
 .about {
@@ -165,11 +163,13 @@ h1 {
 .portfolio {
     grid-area: portfolio;
     text-align: center;
+    background-color: var(--primary);
 }
 
 .portfolio h2 {
     font-size: 2rem;
     margin: 2rem;
+    color: var(--white);
 }
 
 .portfolio-grid { 
@@ -191,14 +191,14 @@ h1 {
 
   .image-box img {
     max-width: 100%;
-    border: 0.2rem solid white;
+    border: 0.2rem solid var(--white);
     border-radius: 0.5rem;
   }
 
   .resume {
     grid-area: resume;
-    background-color: var(--navyColor);
-    color: var(--whiteColor);
+    background-color: var(--primary);
+    color: var(--white);
     text-align: center;
     padding: 2rem;
   }
@@ -215,8 +215,8 @@ h1 {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: var(--whiteColor);
-    color: var(--blackColor);
+    background-color: var(--white);
+    color: var(--black);
     padding: 2rem;
     border-radius: .5rem;
     box-shadow: 4.0px 8.0px 8.0px hsl(0deg 0% 0% / 0.38);
@@ -241,8 +241,8 @@ h1 {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: var(--whiteColor);
-    color: var(--blackColor);
+    background-color: #F5F5F5;
+    color: var(--black);
     padding: 2rem;
     border-radius: .5rem;
     box-shadow: 4.0px 8.0px 8.0px hsl(0deg 0% 0% / 0.38);
@@ -250,8 +250,8 @@ h1 {
 
 .contact {
     text-align: center;
-    background-color: var(--navyColor);
-    color: var(--whiteColor);
+    background-color: var(--white);
+    color: var(--black);
     padding: 2rem;
 }
 
@@ -268,7 +268,7 @@ h1 {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: var(--whiteColor);
+    background-color: #F5F5F5;
     color: var(--blackColor);
     padding: 2rem;
     border-radius: .5rem;
@@ -281,7 +281,7 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: var(--white);
     background: #23263f;
     border-top: 1px solid #8b8989;
 }
@@ -351,7 +351,7 @@ h1 {
 
     .basic-info {
         width: 85%;
-        color: white;
+        color: var(--white);
         background: #23263f;
     }
 
