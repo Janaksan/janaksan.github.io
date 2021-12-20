@@ -38,7 +38,9 @@
     background-size: cover;
     background-position: center;
     height: 100vh;
-    background-color: var(--navyColor)
+    /* background-color: var(--navyColor) */
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(35,45,134,1) 95%);
 }
 
 .header-1 {
