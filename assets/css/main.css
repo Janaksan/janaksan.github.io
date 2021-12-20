@@ -3,9 +3,6 @@
    --redColor : #F05454;
    --navyColor : #23263f;
    --blackColor : #121212;
-
-   --animate-duration: 800ms;
-   --animate-delay: 2s;
 }
 
 * {
@@ -32,7 +29,7 @@
 /* header start */
 .header {
     grid-area: header;
-    background-color: var(--navyColor);
+    /* background-color: var(--navyColor); */
     background-image: url('https://images.unsplash.com/photo-1477346611705-65d1883cee1e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80');
     display: flex;
     justify-content: space-evenly;
@@ -62,13 +59,16 @@ h1 {
     color: var(--whiteColor);
 }
 
+.g-c-span {
+    grid-column: 1 / span 3;
+}
 
 .profile-img {
-    width: 350px;
-    height: 350px;
+    width: 300px;
+    height: 300px;
     border-radius: 100%;
     margin: 50px;
-    /* border: 8px solid var(--navyColor); */
+    box-shadow: 4.0px 8.0px 8.0px hsl(0deg 0% 0% / 0.38);
 }
 
 
@@ -201,7 +201,6 @@ h1 {
     grid-gap: 3rem;
     grid-template-columns: 1fr 1fr 1fr;
     padding: 2rem;
-    
 }
 
 .resume-box {
@@ -216,20 +215,30 @@ h1 {
     box-shadow: 4.0px 8.0px 8.0px hsl(0deg 0% 0% / 0.38);
 }
 
-.resume-box:hover{
-    animation: "jello";
-    animation-duration: 2s;
-}
-
-
-.blog {
-    grid-area: blog;
-    background-color: seagreen;
-}
-
 .contact {
-    grid-area: contact;
-    background-color: slategray;
+    text-align: center;
+    background-color: var(--navyColor);
+    color: var(--whiteColor);
+}
+
+.contact-grid {
+    display: grid;
+    grid-gap: 3rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 2rem;
+    
+}
+
+.contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--whiteColor);
+    color: var(--blackColor);
+    padding: 2rem;
+    border-radius: .5rem;
+    box-shadow: 4.0px 8.0px 8.0px hsl(0deg 0% 0% / 0.38);
 }
 
 .footer {
@@ -240,6 +249,7 @@ h1 {
     align-items: center;
     color: white;
     background: #23263f;
+    border-top: 1px solid #8b8989;
 }
 
 
@@ -249,6 +259,10 @@ h1 {
     h1 {
         font-size: 3rem;
         padding: 1rem;
+    }
+
+    .g-c-span-mobile {
+        grid-column: 1 / span 3;
     }
 
     .header-1 {
@@ -318,5 +332,10 @@ h1 {
     .resume-grid { 
         grid-template-columns: 1fr;
         padding: 2rem 0;
+    }
+
+    .contact-grid { 
+        grid-template-columns: 1fr;
+        /* padding: 2rem 0; */
     }
 }
