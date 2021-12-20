@@ -3,6 +3,9 @@
    --redColor : #F05454;
    --navyColor : #23263f;
    --blackColor : #121212;
+
+   --animate-duration: 800ms;
+   --animate-delay: 2s;
 }
 
 * {
@@ -94,12 +97,18 @@ h1 {
 
 .download-btn {
     font-size: 1.2rem;
-    padding: 1rem;
+    padding: .7rem;
     border-radius: 2rem;
     border: none;
-    width: 95%;
+    width: 90%;
     color: var(--whiteColor);
     background-color: var(--navyColor);
+}
+
+.download-btn:hover {
+    background: none;
+    border: 2px solid var(--navyColor);
+    color: var(--navyColor);
 }
 
 .about {
@@ -149,12 +158,39 @@ h1 {
 
 .portfolio {
     grid-area: portfolio;
-    background-color: rosybrown;
+    text-align: center;
 }
+
+.portfolio h2 {
+    font-size: 2rem;
+    margin: 2rem;
+}
+
+.portfolio-grid { 
+    display: grid;
+    grid-gap: 3rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 2rem;
+    color: #444;
+}
+
+.image-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 50vh; */
+  }
+
+  .image-box img {
+    max-width: 100%;
+    border: 0.2rem solid white;
+    border-radius: 0.5rem;
+  }
+
 
 .resume {
     grid-area: resume;
-    background-color: royalblue;
+    background-color: var(--navyColor);
 }
 
 
@@ -179,7 +215,7 @@ h1 {
 }
 
 
-
+/* Mobile css */
 @media only screen and (max-width: 425px) {
 
     h1 {
@@ -240,5 +276,9 @@ h1 {
 
     .my-skill {
         width: 85%;
+    }
+
+    .portfolio-grid { 
+        grid-template-columns: 1fr;
     }
 }
