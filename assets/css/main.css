@@ -181,8 +181,8 @@ h1 {
     display: grid;
     grid-gap: 3rem;
     grid-template-columns: 1fr 1fr 1fr;
-    padding: 2rem;
     color: #444;
+    padding: 0 2rem 2rem 2rem;
 }
 
 
@@ -368,11 +368,11 @@ h1 {
 
     .portfolio-grid { 
         grid-template-columns: 1fr;
-        padding: 2rem 2rem;
+
     }
 
     .portfolio h2 {
-        margin: 3rem 0;
+        margin-top: 2rem;
     }
 
     .resume-grid { 
