@@ -1,3 +1,4 @@
+
 :root { 
    --white : #FFF;
    --primary: #30475E;
@@ -423,5 +424,12 @@ h1 {
     .image-box img {
         width: 100%;
         height: 35vh;
+    }
+}
+
+
+@media only screen and (max-width: 2000px) {
+    .header {
+        padding: 4rem 5rem;
     }
 }
