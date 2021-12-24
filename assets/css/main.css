@@ -8,6 +8,9 @@
   font-family: "Rajdhani", sans-serif;
   margin: 0;
   padding: 0;
+  -webkit-touch-callout: none !important;
+  -webkit-user-select: none !important;
+  user-select: none !important;
   /* overflow-x: hidden; */
 }
 
